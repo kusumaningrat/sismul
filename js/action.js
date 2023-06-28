@@ -1,4 +1,5 @@
-function selectedItem(itemName, price) {
+function selectedItem(code,itemName, price) {
+    document.getElementById('code').value = code;
     document.getElementById('itemName').value = itemName;
     document.getElementById('price').value = price;
 }
@@ -7,6 +8,7 @@ function Create(e) {
     e.preventDefault();
 
     // Get the form value
+    const code = document.getElementById('code').value;
     const fullname = document.getElementById('fullname').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
@@ -15,6 +17,7 @@ function Create(e) {
 
     // Save Data Object
     const data = {
+        code: code,
         fullname: fullname,
         email: email,
         phone: phone,

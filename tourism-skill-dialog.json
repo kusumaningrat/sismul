@@ -1,0 +1,525 @@
+{
+    "intents": [
+        {
+            "intent": "book-flight",
+            "examples": [
+                {
+                    "text": "book a flight"
+                },
+                {
+                    "text": "I need to buy a ticket"
+                },
+                {
+                    "text": "I want to take an airplane ride"
+                },
+                {
+                    "text": "I want to take a trip"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "check-flight-status",
+            "examples": [
+                {
+                    "text": "Can I check the status of AA 123"
+                },
+                {
+                    "text": "Is my flight delayed"
+                },
+                {
+                    "text": "What is the status of AA 456"
+                },
+                {
+                    "text": "What is the status of my flight"
+                },
+                {
+                    "text": "What time does my flight depart"
+                },
+                {
+                    "text": "When does AA 123 arrive"
+                },
+                {
+                    "text": "when does my flight land"
+                },
+                {
+                    "text": "Where is my flight"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "check-hotel-status",
+            "examples": [
+                {
+                    "text": "What is the status of HH789"
+                },
+                {
+                    "text": "I want to cancell my book with code HH789"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "book-hotel",
+            "examples": [
+                {
+                    "text": "book a hote"
+                },
+                {
+                    "text": "I need to book a hotel"
+                },
+                {
+                    "text": "I want to take a rest in hotel"
+                },
+                {
+                    "text": "I want to dinner"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "book-travel",
+            "examples": [
+                {
+                    "text": "book a travel agent"
+                },
+                {
+                    "text": "I need a guide"
+                },
+                {
+                    "text": "I want to go to senggigi"
+                },
+                {
+                    "text": "I want to go to beach with white sand"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "check-travel-status",
+            "examples": [
+                {
+                    "text": "Can I check the status of LP1234"
+                },
+                {
+                    "text": "Is my guide will pick up me ? "
+                },
+                {
+                    "text": "What is the status of LP1234"
+                },
+                {
+                    "text": "What is the status of my book travel"
+                },
+                {
+                    "text": "What time my guide will pick up me ?"
+                },
+                {
+                    "text": "How long the guide get here ?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "ask-beaches",
+            "examples": [
+                {
+                    "text": "Could you tell me about senggigi beach ?"
+                },
+                {
+                    "text": "What beach do you recommend for holiday ?"
+                },
+                {
+                    "text": "What beach has white sand ?"
+                },
+                {
+                    "text": "What beach is nearest from the aiport ?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "ask-hotels",
+            "examples": [
+                {
+                    "text": "Could you tell me the nearest hotel here ?"
+                },
+                {
+                    "text": "What hotel do you recommend for honey moon ?"
+                },
+                {
+                    "text": "What hotel does serve seafood ?"
+                },
+                {
+                    "text": "Do you know what hotel has beer ?"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "intent": "ask-natures",
+            "examples": [
+                {
+                    "text": "Could you tell me about rinjani ?"
+                },
+                {
+                    "text": "What mountain do you recommend for tracking ?"
+                },
+                {
+                    "text": "What mountain do you recommend for relaxing"
+                }
+            ],
+            "description": ""
+        }
+        
+    ],
+    "entities": [
+        {
+            "entity": "airline",
+            "values": [
+                {
+                    "type": "synonyms",
+                    "value": "AA",
+                    "synonyms": [
+                        "American Airlines",
+                        "American Eagle"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "DL",
+                    "synonyms": [
+                        "Delta"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "NK",
+                    "synonyms": [
+                        "Spirit"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "UA",
+                    "synonyms": [
+                        "United",
+                        "United Airlines"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "VS",
+                    "synonyms": [
+                        "Virgin",
+                        "Virgin Atlantic"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "WN",
+                    "synonyms": [
+                        "Southwest"
+                    ]
+                }
+            ],
+            "fuzzy_match": true
+        },
+        {
+            "entity": "Beach",
+            "values": [
+                {
+                    "type": "synonyms",
+                    "value": "BE",
+                    "synonyms": [
+                        "Senggigi Beach",
+                        "Selong Belanak Beach",
+                        "Tanjung Aan Beach"
+                    ]
+                }
+            ],
+            "fuzzy_match": true
+        },
+        {
+            "entity": "airport",
+            "values": [
+                {
+                    "type": "synonyms",
+                    "value": "ATL",
+                    "synonyms": [
+                        "Atlanta",
+                        "Hartsfield-Jackson"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "AUS",
+                    "synonyms": [
+                        "Austin",
+                        "Austin Bergstrom"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "DAL",
+                    "synonyms": [
+                        "Dallas Love Field",
+                        "Love Field"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "DFW",
+                    "synonyms": [
+                        "Dallas Fort Worth",
+                        "DFW"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "LAX",
+                    "synonyms": [
+                        "LAX",
+                        "Los Angeles"
+                    ]
+                }
+            ],
+            "fuzzy_match": true
+        },
+        {
+            "entity": "sys-number",
+            "values": [],
+            "fuzzy_match": true
+        }
+    ],
+    "metadata": {
+        "api_version": {
+            "major_version": "v2",
+            "minor_version": "2018-11-08"
+        }
+    },
+    "webhooks": [
+        {
+            "url": "https://us-south.functions.appdomain.cloud/api/v1/web/your-url-here.json",
+            "name": "main_webhook",
+            "headers": []
+        }
+    ],
+    "dialog_nodes": [
+        {
+            "type": "standard",
+            "title": "Anything else",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "I didn't understand. You can try rephrasing."
+                            },
+                            {
+                                "text": "Can you reword your statement? I'm not understanding."
+                            },
+                            {
+                                "text": "I didn't get your meaning."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "anything_else",
+            "dialog_node": "Anything else",
+            "previous_sibling": "node_2_1578347066358",
+            "disambiguation_opt_out": true
+        },
+        {
+            "type": "event_handler",
+            "output": {},
+            "parent": "slot_1_1578503813667",
+            "context": {
+                "number": "@sys-number"
+            },
+            "conditions": "@sys-number",
+            "event_name": "input",
+            "dialog_node": "handler_3_1578503813672"
+        },
+        {
+            "type": "event_handler",
+            "output": {},
+            "parent": "slot_2_1578503800481",
+            "context": {
+                "airline": "@airline"
+            },
+            "conditions": "@airline",
+            "event_name": "input",
+            "dialog_node": "handler_4_1578503800493"
+        },
+        {
+            "type": "event_handler",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "What is the flight number?"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "slot_1_1578503813667",
+            "event_name": "focus",
+            "dialog_node": "handler_5_1578503813672",
+            "previous_sibling": "handler_3_1578503813672"
+        },
+        {
+            "type": "event_handler",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "What airline?"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "slot_2_1578503800481",
+            "event_name": "focus",
+            "dialog_node": "handler_9_1578503800493",
+            "previous_sibling": "handler_4_1578503800493"
+        },
+        {
+            "type": "standard",
+            "title": "book-flight",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Which airline would you prefer?"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "#book-flight",
+            "dialog_node": "node_2_1578347066358",
+            "previous_sibling": "node_6_1578503784131"
+        },
+        {
+            "type": "frame",
+            "title": "check-flight-status",
+            "actions": [
+                {
+                    "name": "main_webhook",
+                    "type": "webhook",
+                    "parameters": {
+                        "airline": "$airline",
+                        "flightNumber": "$number"
+                    },
+                    "result_variable": "webhook_result_1"
+                }
+            ],
+            "metadata": {
+                "_customization": {
+                    "mcr": true
+                }
+            },
+            "conditions": "#check-flight-status",
+            "dialog_node": "node_6_1578503784131",
+            "previous_sibling": "Welcome"
+        },
+        {
+            "type": "response_condition",
+            "output": {
+                "text": {
+                    "values": [
+                        "$webhook_result_1.message"
+                    ],
+                    "selection_policy": "sequential"
+                }
+            },
+            "parent": "node_6_1578503784131",
+            "conditions": "$webhook_result_1.message",
+            "dialog_node": "response_10_1642616790032"
+        },
+        {
+            "type": "response_condition",
+            "output": {
+                "text": {
+                    "values": [
+                        "Sorry an error has occured "
+                    ],
+                    "selection_policy": "sequential"
+                }
+            },
+            "parent": "node_6_1578503784131",
+            "conditions": "anything_else",
+            "dialog_node": "response_8_1642616790428",
+            "previous_sibling": "response_10_1642616790032"
+        },
+        {
+            "type": "slot",
+            "parent": "node_6_1578503784131",
+            "variable": "$number",
+            "dialog_node": "slot_1_1578503813667",
+            "previous_sibling": "slot_2_1578503800481"
+        },
+        {
+            "type": "slot",
+            "parent": "node_6_1578503784131",
+            "variable": "$airline",
+            "dialog_node": "slot_2_1578503800481",
+            "previous_sibling": "response_8_1642616790428"
+        },
+        {
+            "type": "standard",
+            "title": "Welcome",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Welcome to toubot, How can I help you ?"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "conditions": "welcome",
+            "dialog_node": "Welcome"
+        }
+    ],
+    "counterexamples": [],
+    "system_settings": {
+        "off_topic": {
+            "enabled": true
+        },
+        "disambiguation": {
+            "prompt": "Did you mean:",
+            "enabled": true,
+            "randomize": true,
+            "max_suggestions": 5,
+            "suggestion_text_policy": "title"
+        },
+        "human_agent_assist": {
+            "prompt": "Did you mean:"
+        },
+        "spelling_auto_correct": true
+    },
+    "learning_opt_out": false,
+    "name": "Webhook Demo - ML",
+    "language": "en",
+    "description": ""
+  }
